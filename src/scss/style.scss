@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// reset
+@import "./reset";
+
+// common
+@import "./common/header";
+@import "./common/footer";
+
+// main
+@import "./main/intro";
+@import "./main/experience";
+@import "./main/projects";
+@import "./main/etc";
