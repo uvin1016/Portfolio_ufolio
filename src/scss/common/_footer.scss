@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    padding: 20px 0;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font: 300 14px/24px 'Roboto';
+            color: #888;
+        }
+
+        h1 {
+            font: 500 24px/1 'Roboto';
+            
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
