@@ -1,5 +1,4 @@
 import Intro from "./Intro";
-import Experience from "./Experience";
 import Projects from "./Projects";
 import Etc from "./Etc";
 
@@ -8,7 +7,6 @@ function Main(){
         <main>
             <div className="inner">
                 <Intro />
-                <Experience />
                 <Projects />
                 <Etc />
             </div>

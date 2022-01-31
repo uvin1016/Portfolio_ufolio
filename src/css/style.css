@@ -30,6 +30,9 @@ header {
       header .inner h1 a {
         color: #fff; }
 
+@media screen and (max-width: 1200px) {
+  header .inner {
+    width: calc(100% - 80px); } }
 footer {
   width: 100%;
   padding: 20px 0; }
@@ -46,16 +49,23 @@ footer {
       footer .inner h1 a {
         color: #fff; }
 
+@media screen and (max-width: 1200px) {
+  footer .inner {
+    width: calc(100% - 80px); } }
 main {
   width: 100%; }
   main .inner {
     width: 1180px;
     margin: 0 auto; }
 
+@media screen and (max-width: 1200px) {
+  main .inner {
+    width: calc(100% - 80px); } }
 #intro {
   width: 100%;
   height: 100vh;
-  padding: 100px 0; }
+  padding: 100px 0;
+  overflow: hidden; }
   #intro .titleBox {
     width: 100%;
     margin-top: 150px; }
@@ -98,6 +108,131 @@ main {
         #intro .introBox .hello:hover .imgBox {
           opacity: 1; }
 
+@media screen and (max-width: 1200px) {
+  #intro .titleBox h1 {
+    font: 150px/1 'Six Caps'; } }
+@media screen and (max-width: 879px) {
+  #intro {
+    position: relative; }
+    #intro .titleBox {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      #intro .titleBox h1 {
+        font: 120px/1 'Six Caps'; }
+    #intro .introBox {
+      position: absolute;
+      bottom: 100px;
+      right: 0px;
+      width: 500px;
+      font: 300 14px/1.6 'SCoreDream'; }
+      #intro .introBox:hover .imgBox {
+        opacity: 0;
+        top: -999999px; } }
+@media screen and (max-width: 648px) {
+  #intro .titleBox h1 {
+    font: 80px/1 'Six Caps'; }
+  #intro .introBox {
+    width: 100%;
+    bottom: 50px; } }
+@media screen and (max-width: 468px) {
+  #intro .titleBox h1 {
+    font: 60px/1 'Six Caps'; } }
+@media screen and (max-width: 376px) {
+  #intro .titleBox h1 {
+    font: 48px/1 'Six Caps'; }
+  #intro .introBox {
+    font: 300 13px/1.6 'SCoreDream'; } }
+#projects {
+  padding: 150px 0; }
+  #projects h1 {
+    font: 400 24px/2.5 "Roboto";
+    color: #fff;
+    text-align: center; }
+  #projects .list {
+    width: 100%;
+    height: 450px;
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #projects .list .pic {
+      width: 50%;
+      height: 100%;
+      opacity: 0.7;
+      cursor: pointer;
+      transition: 1s; }
+      #projects .list .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: 3s .5s; }
+      #projects .list .pic:hover {
+        opacity: 1; }
+        #projects .list .pic:hover img {
+          object-position: bottom; }
+    #projects .list .txt {
+      width: 50%;
+      height: 100%;
+      padding: 0px 30px;
+      word-break: keep-all;
+      position: relative; }
+      #projects .list .txt h2 {
+        font: 400 18px/1.2 "SCoreDream";
+        color: #fff;
+        margin-bottom: 20px; }
+      #projects .list .txt p {
+        font: 300 13px/1.6 "SCoreDream";
+        color: rgba(255, 255, 255, 0.8); }
+      #projects .list .txt .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px 0; }
+        #projects .list .txt .skill li {
+          font: 300 14px/1 "Roboto";
+          color: rgba(214, 113, 45, 0.8);
+          margin-right: 15px; }
+      #projects .list .txt .link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        left: 30px; }
+        #projects .list .txt .link li {
+          margin-right: 15px;
+          padding: 5px 10px;
+          border: 1px solid rgba(255, 255, 255, 0.8);
+          transition: .3s; }
+          #projects .list .txt .link li a {
+            font: 300 14px/1 "Roboto";
+            color: rgba(255, 255, 255, 0.8);
+            transition: .3s; }
+          #projects .list .txt .link li:hover {
+            border: 1px solid white;
+            background-color: #fff; }
+            #projects .list .txt .link li:hover a {
+              color: #050505; }
+
+@media screen and (max-width: 879px) {
+  #projects .list .pic {
+    width: 100%;
+    height: 50%; }
+  #projects .list .txt {
+    width: 100%;
+    height: 50%;
+    padding: 30px 0px; }
+    #projects .list .txt .skill {
+      margin: 20px 0; }
+    #projects .list .txt .link {
+      position: relative;
+      left: 0px; } }
 body {
   background: #050505; }
 
