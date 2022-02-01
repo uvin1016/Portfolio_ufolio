@@ -233,6 +233,95 @@ main {
     #projects .list .txt .link {
       position: relative;
       left: 0px; } }
+#etc {
+  width: 100%;
+  padding: 0 0 150px; }
+  #etc h1 {
+    font: 400 24px/2.5 "Roboto";
+    color: #fff;
+    text-align: center; }
+  #etc .inner {
+    width: 100%; }
+    #etc .inner h2 {
+      font: 300 16px/1.2 "Roboto";
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      margin-bottom: 40px; }
+    #etc .inner #contactForm {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative; }
+      #etc .inner #contactForm .left {
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap; }
+        #etc .inner #contactForm .left input {
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          font: 300 16px/1.2 "SCoreDream";
+          color: #fff;
+          padding: 7px 10px;
+          margin-bottom: 15px; }
+          #etc .inner #contactForm .left input:last-child {
+            margin-bottom: 0; }
+      #etc .inner #contactForm .right {
+        width: 49%; }
+        #etc .inner #contactForm .right textarea {
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          font: 300 16px/1.2 "SCoreDream";
+          color: #fff;
+          padding: 7px 10px;
+          margin-bottom: 15px;
+          resize: none; }
+    #etc .inner .sendBtn {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background: transparent;
+      font: 300 16px/1.2 "SCoreDream";
+      color: #fff;
+      padding: 7px 10px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: .3s; }
+      #etc .inner .sendBtn:hover {
+        background-color: #fff;
+        color: #050505; }
+  #etc .contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+    #etc .contact li {
+      list-style: inside;
+      width: calc(100%/3);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center; }
+      #etc .contact li a {
+        color: rgba(255, 255, 255, 0.7); }
+
+@media screen and (max-width: 879px) {
+  #etc .inner #contactForm {
+    flex-wrap: wrap;
+    flex-direction: column; }
+    #etc .inner #contactForm .left {
+      width: 100%;
+      margin-bottom: 15px; }
+    #etc .inner #contactForm .right {
+      width: 100%; }
+      #etc .inner #contactForm .right textarea {
+        margin-bottom: 0; }
+  #etc .contact {
+    flex-direction: column; }
+    #etc .contact li {
+      width: 100%;
+      text-align: left;
+      font: 300 14px/1.2 'Roboto';
+      margin-bottom: 10px; } }
 body {
   background: #050505; }
 

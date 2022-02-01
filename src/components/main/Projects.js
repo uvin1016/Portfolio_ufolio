@@ -1,5 +1,6 @@
 function Projects(){
     const path = process.env.PUBLIC_URL;
+    
     return(
         <section id="projects">
             <h1>PROJECTS</h1>
