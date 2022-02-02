@@ -17,7 +17,7 @@ function Main(){
     const handleResize = ()=>{
         const secs = main.current.querySelectorAll('section');
         let arr = [];
-        for(let sec of secs) arr.push(sec.offsetTop - 500);
+        for(let sec of secs) arr.push(sec.offsetTop - 200);
         pos.current = arr;
     }
 

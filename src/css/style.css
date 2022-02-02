@@ -63,7 +63,8 @@ footer {
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 20px 0;
-    transition: .3s; }
+    transition: .3s;
+    cursor: pointer; }
     #btns li.on {
       height: 40px;
       background-color: #fff;
