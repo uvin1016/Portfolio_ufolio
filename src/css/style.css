@@ -52,6 +52,23 @@ footer {
 @media screen and (max-width: 1200px) {
   footer .inner {
     width: calc(100% - 80px); } }
+#btns {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%); }
+  #btns li {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 20px 0;
+    transition: .3s; }
+    #btns li.on {
+      height: 40px;
+      background-color: #fff;
+      border-radius: 5px; }
+
 main {
   width: 100%; }
   main .inner {
@@ -146,7 +163,7 @@ main {
   #intro .introBox {
     font: 300 13px/1.6 'SCoreDream'; } }
 #projects {
-  padding: 150px 0; }
+  padding: 150px 0 0; }
   #projects h1 {
     font: 400 24px/2.5 "Roboto";
     color: #fff;
@@ -235,7 +252,7 @@ main {
       left: 0px; } }
 #etc {
   width: 100%;
-  padding: 0 0 150px; }
+  padding: 150px 0; }
   #etc h1 {
     font: 400 24px/2.5 "Roboto";
     color: #fff;
