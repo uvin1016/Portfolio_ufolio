@@ -15,9 +15,9 @@ function Main(){
     }
 
     const handleResize = ()=>{
-        const secs = main.current.querySelectorAll('.myscroll');
+        const secs = main.current.querySelectorAll('section');
         let arr = [];
-        for(let sec of secs) arr.push(sec.offsetTop - 200);
+        for(let sec of secs) arr.push(sec.offsetTop);
         pos.current = arr;
     }
 
@@ -30,7 +30,7 @@ function Main(){
                 for(const btn of btns ) btn.classList.remove('on');
                 btns[index].classList.add('on');
             }
-        })
+        });
     }
 
     useEffect(()=>{
@@ -52,11 +52,9 @@ function Main(){
 
     return(
         <main ref={main}>
-            <div className="inner">
-                <Intro />
-                <Projects />
-                <Etc />
-            </div>
+            <Intro />
+            <Projects />
+            <Etc />
             <Btns getIndex={getIndex} />
         </main>
     )

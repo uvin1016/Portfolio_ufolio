@@ -1,8 +1,9 @@
 #btns {
     position: fixed;
-    right: 30px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 11;
     
     li {
         width: 10px;

@@ -54,9 +54,10 @@ footer {
     width: calc(100% - 80px); } }
 #btns {
   position: fixed;
-  right: 30px;
+  right: 20px;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 11; }
   #btns li {
     width: 10px;
     height: 10px;
@@ -72,110 +73,94 @@ footer {
 
 main {
   width: 100%; }
-  main .inner {
-    width: 1180px;
-    margin: 0 auto; }
 
-@media screen and (max-width: 1200px) {
-  main .inner {
-    width: calc(100% - 80px); } }
 #intro {
   width: 100%;
   height: 100vh;
-  padding: 100px 0;
   overflow: hidden; }
-  #intro .titleBox {
-    width: 100%;
-    margin-top: 150px; }
-    #intro .titleBox h1 {
-      display: flex;
-      font: 180px/1 'Six Caps';
-      color: #fff;
-      justify-content: flex-start; }
-      #intro .titleBox h1:nth-of-type(2) {
-        justify-content: flex-end; }
-  #intro .introBox {
-    width: 550px;
-    margin: 80px 0 0 auto;
-    font: 300 15px/1.6 'SCoreDream';
-    color: rgba(255, 255, 255, 0.7);
-    word-break: keep-all; }
-    #intro .introBox .hello {
-      display: inline-block;
-      margin-right: 3px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-      cursor: pointer;
-      transition: .5s; }
-      #intro .introBox .hello .imgBox {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        position: absolute;
-        opacity: 0;
-        transform: translate(5px, 5px);
-        transition: .3s;
-        overflow: hidden; }
-        #intro .introBox .hello .imgBox img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transform: scale(1.7); }
-      #intro .introBox .hello:hover {
-        border-bottom: 1px solid white;
-        color: white; }
-        #intro .introBox .hello:hover .imgBox {
-          opacity: 1; }
+  #intro .inner {
+    width: 1180px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 100px 0; }
+    #intro .inner .titleBox {
+      width: 100%;
+      margin-top: 150px; }
+      #intro .inner .titleBox h1 {
+        display: flex;
+        font: 180px/1 'Six Caps';
+        color: #fff;
+        justify-content: flex-start; }
+        #intro .inner .titleBox h1:nth-of-type(2) {
+          justify-content: flex-end; }
+    #intro .inner .introBox {
+      width: 550px;
+      margin: 80px 0 0 auto;
+      font: 300 15px/1.6 'SCoreDream';
+      color: rgba(255, 255, 255, 0.7);
+      word-break: keep-all; }
 
 @media screen and (max-width: 1200px) {
-  #intro .titleBox h1 {
-    font: 150px/1 'Six Caps'; } }
+  #intro .inner {
+    width: calc(100% - 80px); }
+    #intro .inner .titleBox h1 {
+      font: 150px/1 'Six Caps'; } }
 @media screen and (max-width: 879px) {
-  #intro {
-    position: relative; }
-    #intro .titleBox {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      #intro .titleBox h1 {
-        font: 120px/1 'Six Caps'; }
-    #intro .introBox {
-      position: absolute;
-      bottom: 100px;
-      right: 0px;
-      width: 500px;
-      font: 300 14px/1.6 'SCoreDream'; }
-      #intro .introBox:hover .imgBox {
-        opacity: 0;
-        top: -999999px; } }
+  #intro .inner .titleBox {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #intro .inner .titleBox h1 {
+      font: 120px/1 'Six Caps'; }
+  #intro .inner .introBox {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    width: 500px;
+    font: 300 14px/1.6 'SCoreDream'; } }
 @media screen and (max-width: 648px) {
-  #intro .titleBox h1 {
+  #intro .inner .titleBox h1 {
     font: 80px/1 'Six Caps'; }
-  #intro .introBox {
+  #intro .inner .introBox {
     width: 100%;
     bottom: 50px; } }
 @media screen and (max-width: 468px) {
-  #intro .titleBox h1 {
+  #intro .inner .titleBox h1 {
     font: 60px/1 'Six Caps'; } }
 @media screen and (max-width: 376px) {
-  #intro .titleBox h1 {
+  #intro .inner .titleBox h1 {
     font: 48px/1 'Six Caps'; }
-  #intro .introBox {
+  #intro .inner .introBox {
     font: 300 13px/1.6 'SCoreDream'; } }
 #projects {
-  padding: 150px 0 0; }
+  position: relative;
+  background-color: #050505;
+  z-index: 10; }
   #projects h1 {
-    font: 400 24px/2.5 "Roboto";
+    position: sticky;
+    top: 0;
+    left: 0;
+    font: 500 24px/1 'Roboto';
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #050505;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    z-index: 11; }
   #projects .list {
     width: 100%;
-    height: 450px;
-    margin: 100px 0;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-bottom: 1px solid #555; }
     #projects .list .pic {
       width: 50%;
       height: 100%;
@@ -195,7 +180,7 @@ main {
     #projects .list .txt {
       width: 50%;
       height: 100%;
-      padding: 0px 30px;
+      padding: 50px;
       word-break: keep-all;
       position: relative; }
       #projects .list .txt h2 {
@@ -221,8 +206,8 @@ main {
         justify-content: flex-start;
         align-items: center;
         position: absolute;
-        bottom: 0px;
-        left: 30px; }
+        bottom: 50px;
+        left: 50px; }
         #projects .list .txt .link li {
           margin-right: 15px;
           padding: 5px 10px;
@@ -245,101 +230,128 @@ main {
   #projects .list .txt {
     width: 100%;
     height: 50%;
-    padding: 30px 0px; }
+    padding: 30px; }
     #projects .list .txt .skill {
       margin: 20px 0; }
     #projects .list .txt .link {
-      position: relative;
-      left: 0px; } }
+      left: 30px;
+      bottom: 30px; } }
+@media screen and (max-width: 426px) {
+  #projects .list {
+    height: 75vh; }
+    #projects .list .pic {
+      height: 40%; }
+    #projects .list .txt {
+      height: 60%; }
+      #projects .list .txt .link {
+        left: 30px;
+        bottom: 30px; }
+        #projects .list .txt .link li {
+          margin: 5px 5px 5px 0px; } }
 #etc {
   width: 100%;
-  padding: 150px 0; }
-  #etc h1 {
-    font: 400 24px/2.5 "Roboto";
-    color: #fff;
-    text-align: center; }
-  #etc .inner {
-    width: 100%; }
-    #etc .inner h2 {
-      font: 300 16px/1.2 "Roboto";
-      color: rgba(255, 255, 255, 0.7);
+  height: 95vh;
+  background-color: #050505;
+  position: relative;
+  z-index: 11; }
+  #etc .contactWrap {
+    width: 100%;
+    height: 100%; }
+    #etc .contactWrap h1 {
+      position: sticky;
+      top: 0;
+      left: 0;
+      font: 500 24px/1 'Roboto';
+      color: #fff;
       text-align: center;
-      margin-bottom: 40px; }
-    #etc .inner #contactForm {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #050505;
+      border-bottom: 1px solid #555;
+      z-index: 11; }
+    #etc .contactWrap .inner {
+      padding: 70px 0;
+      width: 1180px;
+      height: 70%;
+      margin: 0 auto; }
+      #etc .contactWrap .inner h2 {
+        font: 300 16px/1.2 "Roboto";
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        margin-bottom: 50px; }
+      #etc .contactWrap .inner #contactForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative; }
+        #etc .contactWrap .inner #contactForm input {
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          font: 300 16px/1.2 "SCoreDream";
+          color: #fff;
+          padding: 10px;
+          margin-bottom: 20px; }
+        #etc .contactWrap .inner #contactForm textarea {
+          width: 100%;
+          height: 150px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          font: 300 16px/1.2 "SCoreDream";
+          color: #fff;
+          padding: 7px 10px;
+          margin-bottom: 20px;
+          resize: none; }
+      #etc .contactWrap .inner .sendBtn {
+        display: block;
+        width: 150px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: transparent;
+        font: 300 16px/1.2 "SCoreDream";
+        color: #fff;
+        padding: 7px 10px;
+        margin-top: 15px;
+        margin-left: auto;
+        text-align: center;
+        cursor: pointer;
+        transition: .3s; }
+        #etc .contactWrap .inner .sendBtn:hover {
+          background-color: #fff;
+          color: #050505; }
+    #etc .contactWrap .contact {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      position: relative; }
-      #etc .inner #contactForm .left {
-        width: 49%;
-        display: flex;
-        flex-wrap: wrap; }
-        #etc .inner #contactForm .left input {
-          width: 100%;
-          border: 1px solid rgba(255, 255, 255, 0.5);
-          background: transparent;
-          font: 300 16px/1.2 "SCoreDream";
-          color: #fff;
-          padding: 7px 10px;
-          margin-bottom: 15px; }
-          #etc .inner #contactForm .left input:last-child {
-            margin-bottom: 0; }
-      #etc .inner #contactForm .right {
-        width: 49%; }
-        #etc .inner #contactForm .right textarea {
-          width: 100%;
-          height: 100%;
-          border: 1px solid rgba(255, 255, 255, 0.5);
-          background: transparent;
-          font: 300 16px/1.2 "SCoreDream";
-          color: #fff;
-          padding: 7px 10px;
-          margin-bottom: 15px;
-          resize: none; }
-    #etc .inner .sendBtn {
-      width: 100%;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      background: transparent;
-      font: 300 16px/1.2 "SCoreDream";
-      color: #fff;
-      padding: 7px 10px;
-      margin-top: 15px;
-      cursor: pointer;
-      transition: .3s; }
-      #etc .inner .sendBtn:hover {
-        background-color: #fff;
-        color: #050505; }
-  #etc .contact {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px; }
-    #etc .contact li {
-      list-style: inside;
-      width: calc(100%/3);
-      color: rgba(255, 255, 255, 0.7);
-      text-align: center; }
-      #etc .contact li a {
-        color: rgba(255, 255, 255, 0.7); }
+      margin-top: 50px;
+      border-top: 1px solid rgba(255, 255, 255, 0.5); }
+      #etc .contactWrap .contact li {
+        width: calc(100%/3);
+        padding: 100px 20px 20px;
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid transparent; }
+        #etc .contactWrap .contact li a {
+          color: rgba(255, 255, 255, 0.7); }
 
-@media screen and (max-width: 879px) {
-  #etc .inner #contactForm {
-    flex-wrap: wrap;
-    flex-direction: column; }
-    #etc .inner #contactForm .left {
-      width: 100%;
-      margin-bottom: 15px; }
-    #etc .inner #contactForm .right {
-      width: 100%; }
-      #etc .inner #contactForm .right textarea {
-        margin-bottom: 0; }
-  #etc .contact {
-    flex-direction: column; }
-    #etc .contact li {
-      width: 100%;
-      text-align: left;
-      font: 300 14px/1.2 'Roboto';
-      margin-bottom: 10px; } }
+@media screen and (max-width: 1200px) {
+  #etc .contactWrap .inner {
+    width: calc(100% - 100px); }
+    #etc .contactWrap .inner h2 {
+      font: 300 16px/1.2 "Roboto";
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      margin-bottom: 50px; } }
+@media screen and (max-width: 786px) {
+  #etc {
+    height: 100%; }
+    #etc .contactWrap .inner {
+      padding: 60px 0;
+      height: 60%; }
+    #etc .contactWrap .contact {
+      flex-direction: column; }
+      #etc .contactWrap .contact li {
+        width: 100%; } }
 body {
   background: #050505; }
 

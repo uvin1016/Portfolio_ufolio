@@ -11,21 +11,17 @@ function Etc(){
     },[])
 
     return(
-        <section id="etc" className='myscroll'>
+        <section id="etc">
             <div className="contactWrap">
                     <h1>CONTACT</h1>
                     <div className="inner">
                         <h2>Thanks for watching UFOLIO!</h2>
                         <form id="contactForm">
-                            <div className="left">
-                                <input type="hidden" name="contact_number" />
-                                <input type="text" required name="to_name" placeholder="NAME" />
-                                <input type="text" required name="contact" placeholder="CALL" />
-                                <input type="email" required name="from_email" placeholder="E-MAIL" />
-                            </div>
-                            <div className="right">
-                                <textarea required name="message_email" placeholder="MESSAGE" />
-                            </div>
+                            <input type="hidden" name="contact_number" />
+                            <input type="text" required name="to_name" placeholder="NAME" />
+                            <input type="text" required name="contact" placeholder="CALL" />
+                            <input type="email" required name="from_email" placeholder="E-MAIL" />
+                            <textarea required name="message_email" placeholder="MESSAGE" />
                         </form>
                         <input type="submit" value="SEND" className='sendBtn' />
                     </div>
@@ -35,7 +31,7 @@ function Etc(){
                         <li>NUMBER : 010.9788.2092</li>
                         <li>GITHUB : <a href="https://github.com/uvin1016" target="_blank">GITHUB</a></li>
                     </ul>
-                </div>
+            </div>
         </section>
     )
 }

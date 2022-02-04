@@ -4,7 +4,7 @@ function Projects(){
     return(
         <section id="projects">
             <h1>PROJECTS</h1>
-            <div className="list myscroll">
+            <div className="list">
                 <div className="pic">
                     <img src={`${path}/img/reactEnterprise.png`} />
                 </div>
@@ -23,7 +23,7 @@ function Projects(){
                     </ul>
                 </div>
             </div>
-            <div className="list myscroll">
+            <div className="list">
                 <div className="pic">
                     <img src={`${path}/img/reactEnterprise.png`} />
                 </div>
@@ -42,7 +42,7 @@ function Projects(){
                     </ul>
                 </div>
             </div>
-            <div className="list myscroll">
+            <div className="list">
                 <div className="pic">
                     <img src={`${path}/img/reactEnterprise.png`} />
                 </div>
