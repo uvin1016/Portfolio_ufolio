@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Portfolio_ufolio/static/css/main.4acfa302.css",
+    "main.js": "/Portfolio_ufolio/static/js/main.eac884f2.js",
+    "index.html": "/Portfolio_ufolio/index.html",
+    "main.4acfa302.css.map": "/Portfolio_ufolio/static/css/main.4acfa302.css.map",
+    "main.eac884f2.js.map": "/Portfolio_ufolio/static/js/main.eac884f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4acfa302.css",
+    "static/js/main.eac884f2.js"
+  ]
+}
