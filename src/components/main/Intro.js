@@ -25,7 +25,7 @@ function Intro(){
     },[])
 
     return(
-        <section id="intro">
+        <section id="intro" className='myscroll'>
             <div className="titleBox" ref={tit}>
                 <h1>WELLCOME TO UFOLIO I'M</h1>
                 <h1>FRONTEND DEVELOPER</h1>

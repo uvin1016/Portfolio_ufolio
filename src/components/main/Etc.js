@@ -11,7 +11,7 @@ function Etc(){
     },[])
 
     return(
-        <section id="etc">
+        <section id="etc" className='myscroll'>
             <div className="contactWrap">
                     <h1>CONTACT</h1>
                     <div className="inner">

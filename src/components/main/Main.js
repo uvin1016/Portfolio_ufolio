@@ -15,7 +15,7 @@ function Main(){
     }
 
     const handleResize = ()=>{
-        const secs = main.current.querySelectorAll('section');
+        const secs = main.current.querySelectorAll('.myscroll');
         let arr = [];
         for(let sec of secs) arr.push(sec.offsetTop - 200);
         pos.current = arr;
