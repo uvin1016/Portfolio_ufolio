@@ -30,10 +30,11 @@ function Projects(){
                 </div>
                 <div className="txt">
                     <h2>UFOLIO_기업형 사이트</h2>
-                    <p>Vanila JS를 이용한 기업형 사이트입니다. Main, Department(조직도), Community(crud), Gallery(Flickr API), Youtube(Youtube API), Location(Kakao map API), Join(회원가입) 페이지로 구성되어있으며, 반응형으로 작성되었습니다.</p>
+                    <p>Vanila JS를 이용한 기업형 사이트입니다. Main, Department(조직도), Community(Tab), Gallery(Flickr API), Youtube(Youtube API), Location(Kakao map API), Join(회원가입) 페이지로 구성되어있으며, 반응형으로 작성되었습니다.</p>
                     <ul className="skill">
                         <li>JAVASCRIPT</li>
                         <li>SCSS</li>
+                        <li>FETCH</li>
                     </ul>
                     <ul className="link">
                         <li><a href="https://uvin1016.github.io/portfolio_enterprise/" target="_blank">WEBSITE DEMO</a></li>
