@@ -8,8 +8,6 @@ import { useEffect, useRef, useState } from "react";
 function Main(){
     const main = useRef(null);
     let pos = useRef([]);
-    const [index,setIndex] = useState(0);
-
     const getIndex = index=>{
         setIndex(index);
     }
